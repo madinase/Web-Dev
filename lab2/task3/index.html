@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pricing Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f7f7; 
+    color: #1f2328;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.hero {
+    padding: 80px 0 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero .description {
+    font-size: 20px;
+    color: #636c76;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-primary {
+    background-color: #1a1b1a;
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid #d0d7de;
+    color: black;
+}
+
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tier-card.recommended {
+    border: 4px solid #0969da;
+}
+
+.tier-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tier-desc {
+     text-align: center;
+     color: #636c76;
+
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.price span {
+    font-size: 16px;
+    color: #636c76;
+}
+
+
+.feature-list {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.feature-list li {
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #d0d7de;
+}
+
+
+.adds-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.adds-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.addon-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eef1f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #0969da;
+}
+
+.add-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.add-card p {
+    color: #636c76;
+    font-size: 15px;
+}
+
+.add-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1f2328;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.add-card a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+    .pricing-grid, .adds-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+
+
+<body>
+
+    <main>
+        <header class="hero">
+            <div class="container">
+                <h1>Try the Copilot-powered platform</h1>
+                <p class="description">We get it, there's a lot you can do with GitHub. That’s why we've packed all of it into a single risk-free trial that includes GitHub Enterprise, Copilot, and Advanced Security.</p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary">Start free for 30 days</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="pricing-section">
+            <div class="container">
+                <div class="pricing-grid">
+                    <article class="card tier-card">
+                        <div class="card-content">
+                            <h2 class="tier-name">Free</h2>
+                            <p class="tier-desc">The basics for individuals and organizations.</p>
+                            <p class="price">$0 USD <span>per user/month</span></p>
+                            
+                            <a href="#" class="btn btn-outline">Create a free organization</a>
+                            <ul class="feature-list">
+                                <li>Unlimited public/private repositories</li>
+                                <li>Dependabot security and version updates</li>
+                                <li>2,000 CI/CD minutes/month</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="card tier-card">
+                        <div class="card-content">
+                          
+                            <h2 class="tier-name">Team</h2>
+                            <p class="tier-desc">Advanced collaboration for individuals and organizations.</p>
+                            <p class="price">$4 USD <span>per user/month</span></p>
+                            
+                            <a href="#" class="btn btn-primary">Continue with Team</a>
+                            <ul class="feature-list">
+                                <li>Acces to GitHub Codespaces</li>
+                                <li>3,000 CI/CD minutes/month</li>
+                                <li>2GB of Packages storage</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="card tier-card recommended">
+                        <div class="card-content">
+                            <h2 class="tier-name">Enterprise</h2>
+                            <p class="tier-desc">Security, compliance, and flexible deployment.</p>
+                            <p class="price">$21 USD <span>per user/month</span></p>
+                            
+                            <a href="#" class="btn btn-primary">Start a free trial</a>
+                            <ul class="feature-list">
+                                <li>Data residency</li>
+                                <li>50,000 CI/CD minutes/month</li>
+                                <li>50GB of Packages storage</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="adds-section">
+            <div class="container">
+                <h2 class="section-title">Additional add-ons</h2>
+                <div class="adds-grid">
+                    <div class="card add-card">
+                        <h3>GitHub Copilot</h3>
+                        <p>AI-powered developer tool that helps you write code faster.</p>
+ <a href="#">Learn more ›</a>
+                    </div>
+                    <div class="card add-card">
+                        <h3>GitHub Models</h3>
+                       
+                        <p>Bring industry-leading AI into your workflow securely, scalably, and with full developer control.</p>
+ <a href="#">Learn more ›</a>
+                    </div>
+                    <div class="card add-card">
+                        <h3>GitHub Advanced Security</h3>
+                        <p>Gain peace of mind with pur security, privacy, and responsible AI policies.</p>
+ <a href="#">Learn more ›</a>
+                    </div>
+                    <div class="card add-card">
+                        <h3>GitHub Codespaces</h3>
+                        <p>Starting at $0.18 per hout of compute and $0.07 per GB of storage</p>
+ <a href="#">Learn more ›</a>
+                    </div>
+                    <div class="card add-card">
+                        <h3>Premium support</h3>
+                        <p>Get expert help for Enterprise Cloud and Enterprise-any hour your team needs it.</p>
+ <a href="#">Learn more ›</a>
+                    </div>
+                    <div class="card add-card">
+                        <h3>Git Large File Storage</h3>
+                        <p>$5 per month for 50 GB bandwidth and 50 GB of storage</p>
+ <a href="#">Learn more ›</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
