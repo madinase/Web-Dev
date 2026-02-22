@@ -17,11 +17,9 @@ export class ProductCard {
 
   // метод генерирует строку со звёздами по рейтингу
   getStars(rating: number): string {
-    const full = Math.floor(rating);        // целые звёзды
-    const half = rating % 1 >= 0.5 ? 1 : 0; // половина звезды если дробная часть >= 0.5
-    const empty = 5 - full - half;           // пустые звёзды до 5
-    return '★'.repeat(full) + '½'.repeat(half) + '☆'.repeat(empty);
-  }
+  const rounded = Math.round(rating); // 4.8 → 5
+  return '★'.repeat(rounded) + '☆'.repeat(5 - rounded);
+}
 
   // открывает WhatsApp с предзаполненным сообщением и ссылкой на товар
   shareOnWhatsApp(): void {

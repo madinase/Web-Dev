@@ -9,6 +9,14 @@
   flex-direction: column;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Это прижмет кнопку вниз */
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
 /* при наведении карточка немного поднимается */
 .card:hover {
   transform: translateY(-4px);
@@ -55,11 +63,6 @@
 .stars {
   color: #f5a623; /* золотой цвет звёзд */
   font-size: 1rem;
-}
-
-.rating-num {
-  font-size: 0.85rem;
-  color: #888;
 }
 
 /* цена */
@@ -119,4 +122,20 @@
 .telegram {
   background: #0088cc;
   color: #fff;
+}
+
+.stars {
+  color: #f5b301;
+  font-size: 16px;
+}
+
+.rating-number {
+  color: #666;
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex; 
+  gap: 10px;     
 }
