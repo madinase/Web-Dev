@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #1c1e21;
+        }
+
+      
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex: 1;
+        width: 100%;
+        max-width: 1000px;
+        padding: 20px;
+    }
+
+        .top-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        
+        .info {
+            flex: 1;
+            text-align: center;
+        }
+
+        .info h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, orange, red, purple);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline;
+        } 
+
+         
+
+        .auth {
+            width: 100%;
+            max-width: 450px;
+            border-left: 1px solid #dbdbdb;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            margin-top:100px;
+           
+        }
+
+        .form p {
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            height: 44px;
+            padding: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background: #fafafa;
+        }
+
+        button {
+            font-weight: bold;
+            margin-bottom: 10px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid #dbdbdb;
+            cursor: pointer;
+            
+        }
+
+        .button-vhod {
+            background-color: #0095f6;
+            color: white;
+            border: none;
+        }
+
+        .create-account-new {
+            background-color: white;
+            border: 1px solid #0095f6;
+            color: #0095f6;
+        }
+
+        .link {
+            text-align: center;
+            font-size: 14px;
+            text-decoration: none;
+            color: #00376b;
+            margin-top: 5px;
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .fb-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 20px;
+            padding: 10px;
+            text-decoration: none;
+            color: #1c1e21;
+            font-size: 14px;
+        }
+
+        .meta-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        
+ .footer {
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid #dbdbdb;
+        text-align: center;
+        color: #8e8e8e;
+        font-size: 12px;
+}
