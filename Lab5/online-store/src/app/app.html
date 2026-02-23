@@ -1,0 +1,23 @@
+<header>
+  <h1>My Kaspi Store</h1>
+</header>
+
+<nav class="category-list">
+  @for (cat of categories; track cat.id) {
+    <button 
+      (click)="selectCategory(cat.id)"
+      [class.active]="selectedCategoryId === cat.id">
+      {{ cat.name }}
+    </button>
+  }
+</nav>
+
+<main>
+  @if (selectedCategoryId) {
+    <app-product-list 
+      [products]="filteredProducts" 
+      (removeProduct)="handleRemove($event)" />
+  } @else {
+    <div class="welcome">Пожалуйста, выберите категорию, чтобы увидеть товары.</div>
+  }
+</main>

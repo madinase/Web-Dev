@@ -1,0 +1,27 @@
+.category-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button.active {
+  background: #f14635; /* Цвет Kaspi */
+  color: white;
+  border-color: #f14635;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
